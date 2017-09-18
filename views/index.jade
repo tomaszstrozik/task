@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div(class='page-wrapper')
+    h1 GitHub user distance from followers
+    form(novalidate)
+      fieldset
+        input(type='text', id='username')
+        button(type='submit', id='get-followers') Get followers
+    div(class='results-block')
+      ul(class='results-block__list')
+      div(class='results-block__messages messages')
+        div(class='messages__wrapper')
